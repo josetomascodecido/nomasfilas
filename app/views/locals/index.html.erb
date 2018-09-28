@@ -18,7 +18,7 @@
         <td><%= local.name %></td>
         <td><%= local.razonsocial %></td>
         <td><%= local.rut %></td>
-        <td><%= link_to 'Show', local %></td>
+        <td><%= link_to 'Show', local_products_path(local) %></td>
         <td><%= link_to 'Edit', edit_local_path(local) %></td>
         <td><%= link_to 'Destroy', local, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

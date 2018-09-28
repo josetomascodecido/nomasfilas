@@ -20,9 +20,9 @@
         <td><%= product.detail %></td>
         <td class="foto"> <img style="" src="<%= product.photo %>" alt=""> </td>
         <td><%= product.price %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', local_products_path %></td>
+        <td><%= link_to 'Edit', edit_local_product_path() %></td>
+        <td><%= link_to 'Destroy', local_product_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
